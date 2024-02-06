@@ -91,9 +91,15 @@
         -webkit-box-shadow: 3px 1px 0px -5px rgba(229, 231, 235, 0.55);
         -moz-box-shadow: 3px 1px 0px -5px rgba(229, 231, 235, 0.55);
         cursor: pointer;
+        transition: all 0.2s ease;
+        filter: grayscale(1);
+        cursor: pointer;
+        transform: scale(1);
+        transition: all 0.2s ease-in;  
 
         &:hover {
-        transition: all 0.2s ease;
+        filter: grayscale(0);
+        transform: scale(1.1);
         box-shadow: 32px 35px 5px 3px rgba(213, 218, 222,1);
         -webkit-box-shadow: 32px 35px 5px 3px rgba(213, 218, 222,1);
         -moz-box-shadow: 32px 35px 5px 3px rgba(213, 218, 222,1);

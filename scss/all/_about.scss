@@ -1,0 +1,103 @@
+#about {
+  display: flex;
+  align-items: center;
+  padding: 96px 80px;
+  justify-content: space-between;
+  .about {
+    display: flex;
+    padding: 0px 32px;
+    align-items: center;
+    gap: 48px;
+    &_auto {
+      margin: auto;
+      margin-bottom: 48px;
+      width: 105px;
+      padding: 4px 20px;
+      justify-content: center;
+      text-align: center;
+      border-radius: 12px;
+      background: $text-gray200;
+      color: $text-color;
+      p {
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px;
+      }
+    }
+
+    &_left {
+      display: flex;
+      width: 584px;
+      min-width: 444px;
+      flex-direction: column;
+      align-items: flex-start;
+      align-self: stretch;
+      img {
+        width: 400px;
+        height: 480px;
+        box-shadow: 3px 1px 0px -5px rgba(229, 231, 235, 0.55);
+        -webkit-box-shadow: 3px 1px 0px -5px rgba(229, 231, 235, 0.55);
+        -moz-box-shadow: 3px 1px 0px -5px rgba(229, 231, 235, 0.55);
+        cursor: pointer;
+        filter: grayscale(1);
+        cursor: pointer;
+        transform: scale(1);
+        transition: all 0.2s ease-in;
+
+        &:hover {
+          -webkit-box-shadow: -51px 41px 0px 2px rgba(229, 231, 235, 1);
+          -moz-box-shadow: -51px 41px 0px 2px rgba(229, 231, 235, 1);
+          box-shadow: -51px 41px 0px 2px rgba(229, 231, 235, 1);
+
+          filter: grayscale(0);
+          transform: scale(1.1);
+        }
+      }
+    }
+    &_right {
+      display: flex;
+      width: 584px;
+      min-width: 444px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 24px;
+      align-self: stretch;
+      &-list {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        &-item {
+          color: $text-color;
+          font-family: Inter;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 24px;
+        }
+      }
+      &-blog {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        align-self: stretch;
+        &-list {
+          display: flex;
+          text-decoration: dotted;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 10px;
+          &-item {
+            color: $text-color;
+            font-family: Inter;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+          }
+        }
+      }
+    }
+  }
+}

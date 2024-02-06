@@ -1,0 +1,44 @@
+#skills{
+    display: flex;
+    align-items: center;
+    padding: 96px 80px;
+    justify-content: space-between;
+    .skills_auto{
+        margin: auto;
+        width: 105px; 
+        padding: 4px 20px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-radius: 12px;
+        background: $text-gray200;
+        color: $text-color;
+        margin-bottom: 16px;
+            p{
+                font-family: Inter;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 20px; 
+            }
+    }
+    h1{
+        margin: 0 auto;
+        max-width: 576px;
+        align-self: stretch;
+        color:$text-color;
+        text-align: center;
+        font-family: Inter;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+        margin-bottom: 48px;
+    }
+    .skills{
+        display: flex;
+        padding: 0px 32px;
+        align-items: center;
+        gap: 48px;
+    }
+    }
