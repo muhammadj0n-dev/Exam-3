@@ -80,3 +80,22 @@
             grid-template-columns: repeat(3 auto);
         }
     }
+
+    @media (prefers-color-scheme: dark){
+        #skills{
+            .container{
+                h1{
+                    color: white;
+                }
+                .skills{
+                    ul{
+                        li{
+                            p{
+                                color: white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }

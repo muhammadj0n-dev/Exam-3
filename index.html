@@ -19,16 +19,35 @@
                     <a href="#" class="nav__wrap-link"><img src="./assets/images/Logo.png" alt="logo"
                             class="nav__wrap-img" style="width: 107px; height:36px;"></a>
                     <ul class="nav_wrap--list">
-                        <li class="nav_wrap--list-item"><a href="#" class="nav_wrap--list-item-link">About</a></li>
-                        <li class="nav_wrap--list-item"><a href="#" class="nav_wrap--list-item-link">Work</a></li>
-                        <li class="nav_wrap--list-item"><a href="#" class="nav_wrap--list-item-link">Testimonials</a>
+                        <li class="nav_wrap--list-item"><a href="#about" class="nav_wrap--list-item-link">About</a></li>
+                        <li class="nav_wrap--list-item"><a href="#work" class="nav_wrap--list-item-link">Work</a></li>
+                        <li class="nav_wrap--list-item"><a href="#testimonials" class="nav_wrap--list-item-link">Testimonials</a>
                         </li>
-                        <li class="nav_wrap--list-item"><a href="#" class="nav_wrap--list-item-link">Contact</a></li>
+                        <li class="nav_wrap--list-item"><a href="#contact" class="nav_wrap--list-item-link">Contact</a></li>
                         <div class="nav_wrap--list-blog">
-                            <box-icon name='sun' animation='spin' flip='horizontal' color='#4b5563'></box-icon>
-                            <button>Download CV</button>
+                            <button><a href="https://t.me/maj1d0vv">Download CV</a></button>
                         </div>
+                    </ul> 
+                    <box-icon name='menu' class="nav_wrap--list-blog_menu" id="menu"></box-icon>
+                </div>
+                <div class="nav_dropdown">
+                    <div class="nav_dropdown_head">
+                        <img src="./assets/images/Logo.png" alt="log">
+                        <box-icon name='x' color='#4b5563' id="exit"></box-icon>
+                    </div>
+                    <ul class="nav_dropdown_list">
+                        <li class="nav_dropdown_list-item"><a href="#about">About</a></li>
+                        <li class="nav_dropdown_list-item"><a href="#work">Work</a></li>
+                        <li class="nav_dropdown_list-item"><a href="#testimonials">Testimonials</a></li>
+                        <li class="nav_dropdown_list-item"><a href="#contact">Contact</a></li>
                     </ul>
+                    <div class="nav_dropdown_bottom">
+                        <div class="nav_dropdown_bottom-switch">
+                            <p>Switch Theme</p>
+                            <box-icon name='sun' animation='spin' color='#4b5563' id="sunn"></box-icon>
+                        </div>
+                        <button><a href="https://t.me/maj1d0vv">Download CV</a></button>
+                    </div>
                 </div>
             </nav>
         </div>
@@ -453,7 +472,7 @@
                     <h1>muhammad@gmail.com</h1>
                     <img src="./assets/images/Icon.png" alt="">
                 </div>
-                <div class="footer_contact">
+                <div class="footer_contact" id="contact">
                     <img src="./assets/images/icon_1.svg" alt="">
                     <h1><a href="+998934679656">+998 934679656</a></h1>
                     <img src="./assets/images/Icon.png" alt="">
@@ -481,5 +500,6 @@
 </body>
 <!-- Box icon script code -->
 <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-
+<!--  script file link -->
+<script src="./main.js"></script>
 </html>

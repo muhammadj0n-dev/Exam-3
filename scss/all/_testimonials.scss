@@ -62,3 +62,67 @@
     }
   }
 }
+
+
+@media (prefers-color-scheme: dark){
+    #testimonials{
+      .container{
+        h2{
+          color: white;
+        }
+
+        .testimon{
+          .testimon_card{
+            .testimon_card-left{
+              background: #1F2937;
+
+              p{
+                color: white;
+              }
+
+              h3{
+                color: white;
+              }
+
+              span{
+                color: white;
+              }
+              
+            }
+
+            .testimon_card-middle{
+              background: #1F2937;
+
+              p{
+                color: white;
+              }
+
+              h3{
+                color: white;
+              }
+
+              span{
+                color: white;
+              }
+            }
+
+            .testimon_card-right{
+              background: #1F2937;
+
+              p{
+                color: white;
+              }
+
+              h3{
+                color: white;
+              }
+
+              span{
+                color: white;
+              }
+            }
+          }
+        }
+      }
+    }
+}

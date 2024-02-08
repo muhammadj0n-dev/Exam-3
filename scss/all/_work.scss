@@ -206,3 +206,44 @@
         }
     }
 }
+
+
+@media (prefers-color-scheme: dark){
+  #work{
+    .container{
+      h2{
+        color: white;
+      }
+      .work{
+        .work_top{
+          .work_top-right{
+            h1{
+              color: white;
+            }
+            p{
+              color: white;
+            }
+          }
+        }
+
+        .work_middle{
+          h1{
+            color: white;
+          }
+          p{
+            color: white;
+          }
+        }
+
+        .work_bottom{
+          h1{
+            color: white;
+          }
+          p{
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}

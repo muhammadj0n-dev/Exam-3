@@ -1,53 +1,54 @@
-header{
-    width: 100%;
-    margin: 0;
-    padding: 16px;
-    position: fixed;
-    z-index: 33;
-    top: 0;
-    backdrop-filter: blur(25px);
-    .nav{
-        &_wrap{
+header {
+  width: 100%;
+  margin: 0;
+  padding: 16px;
+  position: fixed;
+  z-index: 33;
+  top: 0;
+  background-color: #fff;
+  .nav {
+    &_wrap {
+      display: flex;
+      padding: 0px 32px;
+      justify-content: space-between;
+      align-items: center;
+
+      &--list {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        &-item-link {
+          color: $text-color;
+          font-family: Inter;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 24px;
+          --c: no-repeat linear-gradient(#1095c1 0 0);
+          background: var(--c) calc(-101% + var(--p, 0%)) 100% / 50.1%
+              var(--p, 0.08em),
+            var(--c) calc(201% - var(--p, 0%)) 0 / 50.1% var(--p, 0.08em);
+          transition: 0.15s var(--t, 0s),
+            background-position 0.3s calc(0.3s - var(--t, 0s)) ease-in-out;
+          &:hover {
+            color: white;
+            --p: 101%;
+            --t: 0.3s;
+          }
+        }
+        &-blog {
+          display: flex;
+          align-items: center;
+          gap: 16px;
+          button {
             display: flex;
-            padding: 0px 32px;
-            justify-content: space-between;
+            padding: 6px 16px;
+            justify-content: center;
             align-items: center;
-    
-           &--list{
-            display: flex;
-            align-items: center;
-            gap: 24px;
-            &-item-link{
-                color: $text-color;
-                font-family: Inter;
-                font-size: 16px;
-                font-style: normal;
-                font-weight: 500;
-                line-height: 24px; 
-                --c: no-repeat linear-gradient(#1095c1 0 0);
-                background: 
-                var(--c)  calc(-101% + var(--p,0%)) 100% / 50.1% var(--p,.08em),
-                var(--c)  calc( 201% - var(--p,0%)) 0    / 50.1% var(--p,.08em);
-                transition: 0.15s var(--t,0s), background-position .3s calc(.3s - var(--t,0s)) ease-in-out;
-                &:hover{
-                    color: white;
-                    --p: 101%;
-                    --t: 0.3s;
-                }
-            }
-            &-blog{
-                display: flex;
-                align-items: center;
-                gap: 16px;
-               }
-               &-blog > button{
-                display: flex;
-                padding: 6px 16px;
-                justify-content: center;
-                align-items: center;
-                gap: 8px;
-                border-radius: 12px;
-                background:$text-gray900;
+            gap: 8px;
+            border-radius: 12px;
+            background: $text-gray900;
+            a{
                 color: $text-btn;
                 font-family: Inter;
                 font-size: 16px;
@@ -55,19 +56,151 @@ header{
                 line-height: 24px;
                 letter-spacing: 0em;
                 text-align: left;
-
-               }
-           }
-         
+            }
+          
         }
-    }
-    
-}
-@media only screen and (max-width:768px){
-    header{
-        .nav_wrap--list{
+          &_menu {
             display: none;
+          }
         }
-        overflow-x:hidden;
+      }
     }
+    &_dropdown {
+      display: none;
     }
+  }
+}
+@media only screen and (max-width: 768px) {
+  header {
+    .nav {
+      position: relative;
+    }
+    .nav_dropdown {
+      position: absolute;
+      top: 0;
+      left: 500px;
+      background-color: #ffffff !important;
+      z-index: 999;
+      height: 100vh;
+      display: block;
+      width: 500px;
+      opacity: 0;
+      &_head {
+        display: flex;
+        position: relative;
+        padding: 16px;
+        justify-content: space-between;
+        align-items: flex-start;
+        img {
+          width: 85px;
+          height: 32px;
+        }
+        #exit {
+          position: absolute;
+          left: 285px;
+        }
+      }
+      &_list {
+        display: flex;
+        padding: 16px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        border-bottom: $text-gray100;
+        &-item a{
+          color: $text-color;
+          font-family: Inter;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 24px;
+          transition: 0.1s all ease-in-out;
+          &:hover {
+            background-color: silver;
+            color: lightcyan;
+          }
+        }
+      }
+      &_bottom {
+        display: flex;
+        padding: 16px;
+        flex-direction: column;
+        gap: 16px;
+        &-switch {
+          display: flex;
+          position: relative;
+          justify-content: space-between;
+          align-items: center;
+          p {
+            color: $text-color;
+            font-family: Inter;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px; /* 150% */
+          }
+          #sunn{
+            position: absolute;
+            left: 270px;
+          }
+        }
+        button {
+          width: 300px;
+          display: flex;
+          padding: 6px 16px;
+          justify-content: center;
+          align-items: center;
+          gap: 8px;
+          border-radius: 12px;
+          background: $text-gray900;
+           a{
+            color: $text-btn;
+            font-family: Inter;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 24px;
+           }
+          &:hover {
+            background-color: $text-btn;
+                a{
+                    color: $text-gray900;
+                    font-size: large;
+                }
+            border: none;
+            outline: hidden;
+          }
+        }
+      }
+    }
+    .nav__wrap-link {
+      margin-left: -50px;
+    }
+    .nav_wrap--list {
+      display: none;
+    }
+    .nav_wrap--list-blog_menu {
+      display: block;
+    }
+  }
+}
+
+
+@media (prefers-color-scheme: dark){
+   header{
+    background: #030712 !important;
+    .container{
+      .nav{
+        .nav_wrap{
+        ul{
+          li{
+            a{
+              color: white !important;
+            }
+          }
+        }
+        }
+      }
+    }
+   }
+}

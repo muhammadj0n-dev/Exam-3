@@ -62,3 +62,36 @@
     }
   }
 }
+
+
+@media (prefers-color-scheme: dark){
+    #experience{
+      .container{
+        h1{
+          color: white;
+        }
+        .cards{
+          .card_intro{
+            background: #1F2937;
+            .card_intro-blog{
+              .card_intro-blog_medium{
+                h2{
+                  color: white !important;
+                }
+
+                ul{
+                  li{
+                    color: white;
+                  }
+                }
+
+              }
+              p{
+                color: white;
+              }
+            }
+          }
+        }
+      }
+    }
+}

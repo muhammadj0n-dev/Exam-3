@@ -11,3 +11,10 @@ body{
         src: url(/assets/fonts/Inter/Inter-Thin.ttf);
     }
 }
+
+
+@media (prefers-color-scheme: dark){
+    body{
+        background: #030712;
+    }
+}

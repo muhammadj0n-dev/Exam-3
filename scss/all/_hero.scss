@@ -144,3 +144,48 @@
 }
 }
 
+
+
+@media (prefers-color-scheme: dark){
+    #hero{
+      .container{
+        .hero_auto{
+          .hero_left{
+            .hero_left-content{
+              h1, p {
+                color: white !important;
+              }
+            }
+
+            .hero_left-group{
+              div{
+                box-icon{
+                  filter: brightness(100);
+                }
+                a{
+                  p{
+                    color: white;
+                  }
+                }
+
+                p{
+                  color: white;
+                }
+              }
+            }
+
+            .hero_left-links{
+              a{
+                box-icon{
+                  filter: brightness(100);
+                }
+                img{
+                  filter: brightness(100);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+}

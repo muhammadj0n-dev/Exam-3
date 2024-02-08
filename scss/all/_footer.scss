@@ -123,3 +123,55 @@
           }
         }
 }
+
+
+@media (prefers-color-scheme: dark){
+  footer{
+    .container{
+      .footer_auto{
+       h2{
+        color: white !important;
+       }
+      }
+
+      .footer{
+        div{
+          img{
+            filter: brightness(100);
+          }
+          h1{
+            color: white !important;
+
+            a{
+              color: white;
+            }
+          }
+
+          div{
+            p{
+              color: white !important;
+            }
+            div{
+              box-icon{
+                filter: brightness(100);
+              }
+            }
+          }
+        }
+
+
+       }
+    }
+  }
+
+  .bottom{
+    box-icon{
+      filter: brightness(1000) !important;
+      color: white !important;
+    }
+
+    p{
+      color: white;
+    }
+  }
+}
