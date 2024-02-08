@@ -1,8 +1,5 @@
 #skills{
-    display: flex;
-    align-items: center;
-    padding: 96px 80px;
-    justify-content: space-between;
+    @include section;
     .skills_auto{
         margin: auto;
         width: 105px; 
@@ -40,5 +37,46 @@
         padding: 0px 32px;
         align-items: center;
         gap: 48px;
+        &_list{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 60px;
+            justify-content: space-evenly;
+            align-items:center;
+            &-item{
+                text-align: center;
+                img{
+                    align-items: center;
+                    transition: all 0.2s ease;
+                    cursor: pointer;
+                }
+                p{
+                   
+                    margin-top: 8px;
+                    color: $text-color;
+                    font-family: Inter;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 28px; 
+                }
+                &:hover{
+                    filter: grayscale(0);
+                    transform: scale(1.1);
+                    box-shadow: 32px 35px 5px 3px rgba(213, 218, 222, 1);
+                    -webkit-box-shadow: 32px 35px 5px 3px rgba(213, 218, 222, 1);
+                    -moz-box-shadow: 32px 35px 5px 3px rgba(213, 218, 222, 1);
+                }
+            }
+        }
     }
+    }
+    @media only screen and (max-width:768px){
+        .skills_list-item{
+            margin-left: -20px;
+            width: 55px;
+            gap: 18px;
+            display: grid;
+            grid-template-columns: repeat(3 auto);
+        }
     }

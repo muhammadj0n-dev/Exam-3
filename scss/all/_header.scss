@@ -2,6 +2,10 @@ header{
     width: 100%;
     margin: 0;
     padding: 16px;
+    position: fixed;
+    z-index: 33;
+    top: 0;
+    backdrop-filter: blur(25px);
     .nav{
         &_wrap{
             display: flex;
@@ -20,10 +24,15 @@ header{
                 font-style: normal;
                 font-weight: 500;
                 line-height: 24px; 
-                transition: 0.2s ease-in-out;
+                --c: no-repeat linear-gradient(#1095c1 0 0);
+                background: 
+                var(--c)  calc(-101% + var(--p,0%)) 100% / 50.1% var(--p,.08em),
+                var(--c)  calc( 201% - var(--p,0%)) 0    / 50.1% var(--p,.08em);
+                transition: 0.15s var(--t,0s), background-position .3s calc(.3s - var(--t,0s)) ease-in-out;
                 &:hover{
-                    color: black;
-                    border-bottom: 1px solid $text-color;
+                    color: white;
+                    --p: 101%;
+                    --t: 0.3s;
                 }
             }
             &-blog{
@@ -54,3 +63,11 @@ header{
     }
     
 }
+@media only screen and (max-width:768px){
+    header{
+        .nav_wrap--list{
+            display: none;
+        }
+        overflow-x:hidden;
+    }
+    }

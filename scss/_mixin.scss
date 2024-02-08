@@ -1,0 +1,186 @@
+// <! mixin section section param !>
+@mixin section {
+    display: flex;
+    margin-top: 96px;
+    align-items: center;
+    justify-content: space-between;
+  }
+// <! mixin card for card !> 
+@mixin card{
+  .card_intro{
+    display: flex;
+    width: 896px;
+    padding: 32px;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 12px;
+    background: #FFF;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.06), 0px 4px 3px 0px rgba(0, 0, 0, 0.07);
+    &-blog{
+        display: flex;
+        align-items: flex-start;
+        gap: 48px;
+        align-self: stretch;
+        p{
+            display: flex;
+            align-items: flex-start;
+            gap: 48px;
+            align-self: stretch;
+            color: $text-gray700;
+            font-family: Inter;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px; /* 150% */
+        }
+        &_medium{
+            display: flex;
+            width: 384px;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 16px;
+            h2{
+                color:$text-gray900;
+                font-family: Inter;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 28px;
+            }
+            &-list{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 4px;
+                align-self: stretch;
+                &_item{
+                    color:$text-color;
+                    font-family: Inter;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+}
+}
+// <! mixin for h1 !>
+@mixin head1{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  align-self: stretch;
+  overflow: hidden;
+  color: $text-gray900;
+  text-overflow: ellipsis;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+}
+// <! mixin for p !>
+@mixin parag{
+  color: $text-color;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+// <! mixin for list !>
+@mixin list{
+  display: flex;
+  align-items: center;
+  align-content: center;
+  gap: 8px;
+  align-self: stretch;
+  flex-wrap: wrap;
+}
+// <! mixin for item !>
+@mixin item{
+  display: flex;
+  padding: 4px 20px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  background:$text-gray200;
+  color: var(--Gray-600, #4B5563);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; 
+  &:hover{
+    background: lightcyan;
+    color: black;
+  }
+}
+// <! mixin button !>
+@mixin btn{
+  position: relative;
+  left: -205px;
+  border: none;
+  background: transparent;
+}
+@mixin testimon {
+  display: flex;
+  min-width: 300px;
+  width: 373px;
+  height: 430px;
+  padding: 48px;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  flex: 1 0 0;
+  align-self: stretch;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.06), 0px 4px 3px 0px rgba(0, 0, 0, 0.07);
+  p{
+      text-align: center;
+      color:$text-color;
+      font-family: Inter;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px;  
+  }
+  h3{
+      color:$text-gray900;
+      text-align: center;
+      font-family: Inter;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 28px;
+  }
+  span{
+      color: $text-color;
+      text-align: center;
+      font-family: Inter;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px;
+  }
+}
+// <! footer head !>
+@mixin fot_head{
+  color:$text-gray900;
+  text-align: center;
+  font-family: Inter;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: -0.72px;
+}
+  @mixin mxw {
+    display: flex;
+    align-items: center;
+    padding: 0px 0px;
+    justify-content: space-between;
+  }

@@ -1,0 +1,208 @@
+#work {
+  @include section;
+  .work_auto {
+    margin: auto;
+    width: 105px;
+    padding: 4px 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 12px;
+    background: $text-gray200;
+    color: $text-color;
+    margin-bottom: 16px;
+    p {
+      font-family: Inter;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 20px;
+    }
+  }
+  h2 {
+    margin: 0 auto;
+    max-width: 576px;
+    align-self: stretch;
+    color: $text-color;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 48px;
+  }
+  .work {
+    display: flex;
+    padding: 0px 32px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+    align-self: stretch;
+    &_top {
+      display: flex;
+      box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.06),
+        0px 4px 3px 0px rgba(0, 0, 0, 0.07);
+      &-left {
+        display: flex;
+        padding: 48px;
+        justify-content: center;
+        align-items: center;
+        flex: 1 0 0;
+        align-self: stretch;
+        border-radius: 12px 0px 0px 12px;
+        border-right: 1px solid $text-gray100;
+        background: &text-btn;
+      }
+      &-right {
+        display: flex;
+        padding: 48px;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        align-self: stretch;
+        h1 {
+          @include head1;
+        }
+        p {
+          @include parag;
+        }
+        &_list {
+          @include list;
+          &-item {
+            @include item;
+          }
+        }
+        button {
+          @include btn;
+        }
+      }
+    }
+    &_middle {
+      display: flex;
+      box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.06),
+        0px 4px 3px 0px rgba(0, 0, 0, 0.07);
+      &-left {
+        display: flex;
+        padding: 48px;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        align-self: stretch;
+        h1 {
+          @include head1;
+        }
+        p {
+          @include parag;
+        }
+        &_list {
+          @include list;
+          &-item {
+            @include item;
+          }
+        }
+        button {
+          @include btn;
+          left: -250px;
+        }
+      }
+    }
+    &_bottom {
+      display: flex;
+      box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.06),
+        0px 4px 3px 0px rgba(0, 0, 0, 0.07);
+      &-left {
+        display: flex;
+        padding: 48px;
+        justify-content: center;
+        align-items: center;
+        flex: 1 0 0;
+        align-self: stretch;
+        border-radius: 12px 0px 0px 12px;
+        border-right: 1px solid $text-gray100;
+        background: &text-btn;
+      }
+      &-right {
+        display: flex;
+        padding: 48px;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        align-self: stretch;
+        h1 {
+          @include head1;
+        }
+        p {
+          @include parag;
+        }
+        &_list {
+          @include list;
+          &-item {
+            @include item;
+          }
+        }
+        button {
+          @include btn;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width:768px){
+    #work{
+        .work{
+            display: flex;
+            flex-direction:column;
+            
+            &_top{
+                display: flex;
+                flex-direction: column;
+                width: 343px !important;
+               
+                &-left{
+                    img{
+                        width: 300px !important;
+                    }
+                }
+                &-right{
+                    width: 350px !important;
+                    margin-left: -20px;
+                }
+                .work_top-right_list{
+                    width: 300px !important;
+                }
+            }
+            &_middle{
+                display: flex;
+                flex-direction: column-reverse;
+                width: 343px !important;
+                &-right{
+                    margin-left: 25px;
+                    // background: red;
+                    img{
+                        width: 300px !important;
+                        
+                    }
+                }
+                &-left{
+                    margin-left: -20px;
+                }
+            }
+            &_bottom{
+                display: flex;
+                flex-direction: column;
+                width: 343px !important;
+                &-left{
+                    img{
+                        width: 300px !important;
+                    }
+                }
+                &-right{
+                    width: 350px !important;
+                    margin-left: -20px;
+                }
+            }
+        }
+    }
+}

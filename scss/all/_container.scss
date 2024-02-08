@@ -4,3 +4,8 @@
     width: 100%;
     padding: 0 16px;
 }
+@media only screen and (max-width:876px) {
+   .container{
+    max-width: 876px;
+   } 
+}
